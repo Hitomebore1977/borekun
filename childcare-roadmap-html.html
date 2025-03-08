@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>保育士資格取得のための完全ロードマップ | 10月合格に向けたプラン</title>
+    <style>
+        :root {
+            --primary: #FF8A65;
+            --secondary: #4FC3F7;
+            --accent: #9575CD;
+            --success: #81C784;
+            --warning: #FFD54F;
+            --dark: #37474F;
+            --light: #ECEFF1;
+            --white: #FFFFFF;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Hiragino Kaku Gothic ProN', 'メイリオ', sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: #F5F5F5;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        section {
+            padding: 60px 0;
+        }
+        
+        h1, h2, h3, h4 {
+            font-weight: 700;
+            line-height: 1.3;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--white);
+        }
+        
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid var(--primary);
+            display: inline-block;
+        }
+        
+        h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+        
+        h4 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        p {
+            margin-bottom: 1rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: var(--primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .btn:hover {
+            background-color: #F4511E;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        }
+        
+        .text-center {
+            text-align: center;
+        }
+        
+        /* ヘッダー */
+        header {
+            background: linear-gradient(135deg, var(--primary) 0%, #FF5722 100%);
+            color: white;
+            padding: 100px 0 60px;
+            text-align: center;
+        }
+        
+        .header-content p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .subheading {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--warning);
+        }
+        
+        /* 特徴セクション */
+        .features {
+            background-color: var(--white);
+            padding: 80px 0;
+        }
+        
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .feature-box {
+            background-color: var(--light);
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+        
+        .feature-box:hover {
+            transform: translateY(-10px);
+        }
+        
+        .feature-box h3 {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .feature-box h3 span {
+            background-color: var(--primary);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+        
+        /* スケジュールセクション */
+        .schedule {
+            background-color: var(--light);
+            padding: 80px 0;
+        }
+        
+        .schedule-timeline {
+            position: relative;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .timeline-item {
+            padding: 30px;
+            background-color: var(--white);
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            position: relative;
+            z-index: 1;
+        }
+        
+        .timeline-date {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .timeline-date::before {
+            content: "";
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            background-color: var(--primary);
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        
+        .timeline-content h4 {
+            color: var(--dark);
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+        
+        .point-list li {
+            list-style-type: none;
+            padding-left: 25px;
+            position: relative;
+            margin-bottom: 10px;
+        }
+        
+        .point-list li::before {
+            content: "✅";
+            position: absolute;
+            left: 0;
+        }
+        
+        /* 学習方法セクション */
+        .study-method {
+            background-color: var(--white);
+            padding: 80px 0;
+        }
+        
+        .method-box {
+            background-color: var(--light);
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .method-box h3 {
+            margin-bottom: 20px;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+        }
+        
+        .method-box h3 i {
+            margin-right: 10px;
+            font-size: 1.5rem;
+        }
+        
+        .text-box {
+            background-color: var(--white);
+            border-left: 4px solid var(--secondary);
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 0 5px 5px 0;
+        }
+        
+        .text-box p {
+            margin-bottom: 0;
+        }
+        
+        /* 実務経験セクション */
+        .practical-experience {
+            background-color: var(--light);
+            padding: 80px 0;
+        }
+        
+        .experience-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .experience-card {
+            background-color: var(--white);
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            border-top: 5px solid var(--success);
+        }
+        
+        .experience-card h4 {
+            color: var(--success);
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+        
+        /* 直前期セクション */
+        .final-stage {
+            background-color: var(--white);
+            padding: 80px 0;
+        }
+        
+        .tips-container {
+            background-color: var(--light);
+            border-radius: 10px;
+            padding: 30px;
+            max-width: 800px;
+            margin: 0 auto 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .tip-item {
+            display: flex;
+            margin-bottom: 20px;
+            background-color: var(--white);
+            padding: 15px;
+            border-radius: 5px;
+        }
+        
+        .tip-icon {
+            font-size: 1.5rem;
+            color: var(--warning);
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+        
+        .tip-content {
+            flex-grow: 1;
+        }
+        
+        .tip-content h4 {
+            margin-bottom: 5px;
+            color: var(--dark);
+        }
+        
+        /* モチベーションセクション */
+        .motivation {
+            background-color: var(--light);
+            padding: 80px 0;
+        }
+        
+        .motivation-box {
+            background-color: var(--white);
+            border-radius: 10px;
+            padding: 30px;
+            max-width: 800px;
+            margin: 0 auto 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .motivation-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+        
+        .motivation-icon {
+            background-color: var(--accent);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+        
+        .motivation-content h4 {
+            color: var(--accent);
+            margin-bottom: 5px;
+        }
+        
+        /* まとめセクション */
+        .summary {
+            background: linear-gradient(135deg, var(--primary) 0%, #FF5722 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .summary h2 {
+            color: white;
+            border-bottom-color: var(--white);
+        }
+        
+        .summary-points {
+            max-width: 800px;
+            margin: 0 auto 40px;
+            text-align: left;
+        }
+        
+        .summary-point {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .summary-num {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-right: 10px;
+            color: var(--warning);
+        }
+        
+        .cta-button {
+            padding: 15px 40px;
+            font-size: 1.2rem;
+            margin-top: 20px;
+        }
+        
+        /* フッター */
+        footer {
+            background-color: var(--dark);
+            color: var(--white);
+            padding: 30px 0;
+            text-align: center;
+        }
+        
+        .footer-message {
+            font-weight: 700;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+        
+        .footer-character {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.7rem;
+            }
+            
+            .header-content p {
+                font-size: 1rem;
+            }
+            
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .experience-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header>
+        <div class="container header-content">
+            <div class="subheading">あなたの夢を現実に</div>
+            <h1>保育士資格取得のための完全ロードマップ</h1>
+            <p>10月の試験合格に向けた7か月プラン</p>
+            <a href="#schedule" class="btn">学習スケジュールを見る</a>
+        </div>
+    </header>
+    
+    <!-- 特徴 -->
+    <section class="features">
+        <div class="container text-center">
+            <h2>このプランの特徴</h2>
+            <p>保育士試験は決して簡単ではないけど…<strong>正しい計画と戦略的な学習方法を実践すれば<br>1年以内での合格は十分に可能</strong>です！</p>
+            
+            <div class="feature-grid">
+                <div class="feature-box">
+                    <h3><span>1</span>実務経験を活かす</h3>
+                    <p>現場での経験を最大限に活用し、効率的に学習を進めるプランです。実際の保育現場でのエピソードと試験範囲を結びつけることで、記憶の定着率が格段に上がります。</p>
+                </div>
+                
+                <div class="feature-box">
+                    <h3><span>2</span>段階的学習法</h3>
+                    <p>「基礎→実践→苦手克服→総仕上げ」という明確なステップで、無理なく着実に合格レベルまで実力を上げていけます。</p>
+                </div>
+                
+                <div class="feature-box">
+                    <h3><span>3</span>無駄を省いた効率的プラン</h3>
+                    <p>「これだけやれば合格できる」というポイントを厳選。忙しい現役保育者でも無理なく続けられる学習計画です。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- スケジュール -->
+    <section id="schedule" class="schedule">
+        <div class="container text-center">
+            <h2>7か月合格スケジュール</h2>
+            <p>試験合格までの道のりを明確にステップ分け。<br>毎月のゴールを達成していくことで、着実に実力を積み上げていきましょう。</p>
+            
+            <div class="schedule-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">3〜4月（基礎インプット期）</div>
+                    <div class="timeline-content">
+                        <h4>全体の概要を把握する・基礎知識を固める</h4>
+                        <ul class="point-list">
+                            <li>テキストを1周通読し、全科目の全体像を掴む</li>
+                            <li>1日1時間×週5日で学習リズムを作る</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">5〜7月（実践アウトプット期）</div>
+                    <div class="timeline-content">
+                        <h4>過去問を解きながら知識を定着させる</h4>
+                        <ul class="point-list">
+                            <li>科目ごとに問題演習を行い、頻出ポイントを把握</li>
+                            <li>間違えた箇所を「テキストで復習」→「再度解く」を繰り返す</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">8月（苦手克服＆総復習）</div>
+                    <div class="timeline-content">
+                        <h4>過去問＋予想問題で弱点補強</h4>
+                        <ul class="point-list">
+                            <li>「間違えた問題の原因分析」と「類似問題を解く」を徹底</li>
+                            <li>記憶の定着のため、間隔を空けて復習（スパイラル学習）を実践</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">9月（模試＆最終調整）</div>
+                    <div class="timeline-content">
+                        <h4>本番形式で模試を実施し、時間配分を体得</h4>
+                        <ul class="point-list">
+                            <li><strong>時間を計って模試を3回以上実施</strong>（本番のシミュレーション）</li>
+                            <li><strong>最新の法改正や制度変更を最終確認</strong></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">10月（直前期＆試験当日）</div>
+                    <div class="timeline-content">
+                        <h4>記憶の整理と最終確認</h4>
+                        <ul class="point-list">
+                            <li>知識を「最終要点ノート」にまとめ、暗記チェック</li>
+                            <li>直前1週間は新しい問題に手を出さず、これまでの復習に徹する</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- 学習方法 -->
+    <section class="study-method">
+        <div class="container">
+            <h2 class="text-center">学習方法（独学での合格戦略）</h2>
+            
+            <div class="method-box">
+                <h3><i>📚</i> テキストの選定と活用法</h3>
+                <p><strong>「最短合格」のためには、教材選びが超重要！</strong> 以下の2冊をメイン教材として使いましょう。</p>
+                
+                <div class="text-box">
+                    <p><strong>おすすめ教材</strong></p>
+                    <p>✅ <strong>『福祉教科書 保育士完全合格テキスト』（翔泳社）</strong> → 圧倒的に分かりやすい！<br>
+                    ✅ <strong>『保育士試験 過去問題集』（ユーキャン）</strong> → 最新年度の過去問が必須！</p>
+                </div>
+                
+                <p><strong>活用法</strong></p>
+                <ul class="point-list">
+                    <li><strong>「まずテキストを1周」</strong>：最初は完璧に理解しようとせず、<strong>「全体像をつかむ」ことが目的</strong></li>
+                    <li><strong>「章末問題を解きながらインプット」</strong>：ただ読むのではなく、<strong>アウトプット（問題演習）をセットで行う</strong></li>
+                    <li><strong>「間違えた問題をノートにメモ」</strong>：苦手ポイントを明確にし、効率的に復習</li>
+                </ul>
+            </div>
+            
+            <div class="method-box">
+                <h3><i>📝</i> 学習の進め方（インプット × アウトプット）</h3>
+                <p>❌ <strong>「読むだけ」の学習では合格できない！</strong><br>
+                ✅ <strong>「知識を定着させる」ために、問題を解きながら覚えるのが鉄則！</strong></p>
+                
+                <div class="text-box">
+                    <p><strong>学習サイクル（例）</strong></p>
+                    <p>1. <strong>月曜〜金曜（1日1時間）</strong>：「テキストを読みつつ、章末問題を解く」<br>
+                    2. <strong>土曜（3時間）</strong>：「1週間の間違いをまとめて復習」<br>
+                    3. <strong>日曜（休息 or 模試）</strong>：「余裕があれば模試を解く（本番の練習）」</p>
+                </div>
+                
+                <p>👉 <strong>「最初の3か月間で全範囲を1周」し、4か月目以降は問題演習メイン</strong>に切り替える！</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- 実務経験を活かした学習法 -->
+    <section class="practical-experience">
+        <div class="container">
+            <h2 class="text-center">実務経験を活かした学習法（最強の合格戦略！）</h2>
+            <p class="text-center"><strong>勤務時間を活かして「実体験 × 勉強」をリンクさせると、記憶が定着しやすい！</strong></p>
+            
+            <div class="experience-grid">
+                <div class="experience-card">
+                    <h4>🔹 保育原理 × 実務経験</h4>
+                    <p>「園の保育理念」を日々意識すると、自然と暗記できる！</p>
+                    <p>例：朝の会で保育目標を子どもと確認する習慣をつけると、保育の基本がしっかり頭に入ります。</p>
+                </div>
+                
+                <div class="experience-card">
+                    <h4>🔹 子どもの発達 × 観察</h4>
+                    <p>「○歳児の特徴」を実際に観察しながら学ぶと、一気に理解が進む！</p>
+                    <p>例：担当クラスの子どもの行動と発達段階を結びつけてノートに記録すると、テキストの内容が生きた知識になります。</p>
+                </div>
+                
+                <div class="experience-card">
+                    <h4>🔹 保護者支援 × 現場対応</h4>
+                    <p>「保護者対応のポイント」をOJTで体験しながら学ぶと、試験対策にも直結！</p>
+                    <p>例：実際の保護者との会話で使った言葉や対応を振り返ることで、相談援助の原則が実感として理解できます。</p>
+                </div>
+            </div>
+            
+            <p class="text-center" style="margin-top: 30px;">👉 <strong>「目の前の業務」と「試験範囲」を結びつけると、短時間での学習効果が最大化する！</strong></p>
+        </div>
+    </section>
+    
+    <!-- 直前期の学習ポイント -->
+    <section class="final-stage">
+        <div class="container text-center">
+            <h2>直前期（9月〜10月）の学習ポイント</h2>
+            <p><strong>合格する人は、「ラスト1か月の過ごし方」が違う！</strong></p>
+            
+            <div class="tips-container">
+                <div class="tip-item">
+                    <div class="tip-icon">✔</div>
+                    <div class="tip-content">
+                        <h4>「過去問3年分」を通しで解く</h4>
+                        <p>本番シミュレーションとして、時間を計りながら解いてみましょう。</p>
+                    </div>
+                </div>
+                
+                <div class="tip-item">
+                    <div class="tip-icon">✔</div>
+                    <div class="tip-content">
+                        <h4>法改正・重要ポイントを最終チェック</h4>
+                        <p>出題頻度が高い最新の制度変更を確実におさえておきましょう。</p>
+                    </div>
+                </div>
+                
+                <div class="tip-item">
+                    <div class="tip-icon">✔</div>
+                    <div class="tip-content">
+                        <h4>新しい問題集に手を出さない！</h4>
+                        <p>不安になって余計なことをせず、これまでやってきたことを信じましょう。</p>
+                    </div>
+                </div>
+                
+                <div class="tip-item">
+                    <div class="tip-icon">✅</div>
+                    <div class="tip-content">
+                        <h4>本番と同じ時間帯に模試を解く</h4>
+                        <p>試験当日のリズムを作っておくことで、本番でもベストパフォーマンスを発揮できます。</p>
+                    </div>
+                </div>
+                
+                <div class="tip-item">
+                    <div class="tip-icon">✅</div>
+                    <div class="tip-content">
+                        <h4>試験前日はリラックス</h4>
+                        <p>最後に見るのは、自分がまとめた要点ノートだけ。無理に詰め込まず、これまでの努力を信じましょう。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- モチベーション維持のための工夫 -->
+    <section class="motivation">
+        <div class="container text-center">
+            <h2>モチベーション維持のための工夫</h2>
+            
+            <div class="motivation-box">
+                <div class="motivation-item">
+                    <div class="motivation-icon">🔹</div>
+                    <div class="motivation-content">
+                        <h4>目標設定</h4>
+                        <p>「10月に合格して、翌月から正式に保育士として働く！」と決意する。具体的なゴールイメージを持つことで、毎日の学習が意味を持ちます。</p>
+                    </div>
+                </div>
+                
+                <div class="motivation-item">
+                    <div class="motivation-icon">🔹</div>
+                    <div class="motivation-content">
+                        <h4>学習記録の可視化</h4>
+                        <p>「どれだけ勉強したか」を記録し、小さな達成感を積み重ねる。カレンダーに学習時間を記入したり、進捗チェックリストを作ったりすると効果的です。</p>
+                    </div>
+                </div>
+                
+                <div class="motivation-item">
+                    <div class="motivation-icon">🔹</div>
+                    <div class="motivation-content">
+                        <h4>仲間と励まし合う</h4>
+                        <p>「SNSや職場で学習仲間を作ると、モチベーションが維持しやすい！」同じ目標を持つ仲間と情報交換することで、孤独感なく学習を続けることができます。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- まとめ -->
+    <section class="summary">
+        <div class="container">
+            <h2>このプランを実践すれば、合格できると信じる！</h2>
+            <p>「仕事しながら勉強するのは大変…」と思うかもしれません。<br>でも…<strong>正しい計画とやるべきことを明確にすれば、保育士資格は取得できるはず</strong
